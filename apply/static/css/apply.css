@@ -83,6 +83,7 @@ h1 {
 h2 {
     font-family: 'beanpoleotL00';
     font-size: 21px;
+    letter-spacing: 1px;
 }
 
 .info-box {
@@ -146,7 +147,7 @@ button {
     border: none;
     border-radius: 25px;
     background-color: #ff9e1b;
-    font-family: 'beanpoleotB00';
+    font-family: 'beanpoleotM00';
     font-size: 25px;
     color: #ffffff;
     text-shadow: 0px 0px 2px #ebebeb;
