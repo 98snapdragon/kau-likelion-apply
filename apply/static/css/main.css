@@ -15,15 +15,60 @@
 }
 
 .main-logo {
-    width: 700px;
-    height: 700px;
+    margin-top: 80px;
+    width: 600px;
+    height: 600px;
     object-fit: cover;
 }
 
-.beanpole-medieum {
-    font-family: 'beanpoleM00';
+.logo-container {
+    margin-left: -100px;
+}
+
+.beanpole-medium {
+    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
+    font-weight: 400;
 }
 
 .beanpole-light {
-    font-family: 'beanpoleL00';
+    font-family: "빈폴 2020OTF", 'beanpoleL00', beanpoleL00;
+    font-weight: 100;
+}
+
+.all-container {
+    display: flex;
+    justify-content: center;
+}
+
+.heading {
+    font-size: 60px;
+    text-shadow: 0px 0px 5px #00000029;
+}
+
+.subheading {
+    margin-top: -55px;
+    font-size: 35px;
+    text-shadow: 0px 0px 5px #00000029;
+}
+
+.btn {
+    border: none;
+    background-color: #ff9e1b;
+    box-shadow: 0px 0px 5px #00000029;
+    text-shadow: 0px 0px 5px #00000029;
+    color: #ffffff;
+    width: 210px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 25px;
+}
+
+.welcome-container {
+    margin-left: -20px;
+    margin-top: 240px;
+    text-align: right;
+}
+
+.a:hover {
+    cursor: pointer;
 }

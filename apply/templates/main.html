@@ -1,15 +1,26 @@
 {% load static %}
 
 <!DOCTYPE html>
-
+<html lang="ko">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>멋사X항공대 지원하기</title>
     <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css">
 </head>
 
 <body>
-    <img class = "main-logo" src="./삽입로고 배경 x.png">
-    <p class = "heading beanpole-medium">멋쟁이사자처럼 X 한국항공대학교</p>
-    <p class = "subheading beanpole-light">지원자 여러분 환영합니다!</p>
-    <a href="/apply"><button class = "beanpole-medium" type="button">지금 바로 지원하기 ></button></a>
+    <div class="all-container">
+        <div class="logo-container">
+            <img class = "main-logo" src="{% static 'img/삽입로고 배경 x.png' %}">    
+        </div>
+    
+        <div class="welcome-container">
+            <p class = "heading beanpole-medium">멋쟁이사자처럼 X 한국항공대학교</p>
+            <p class = "subheading beanpole-light">지원자 여러분 환영합니다!</p>
+            <a href="{% url 'apply' %}"><button class = "btn beanpole-medium" type="button">지금 바로 지원하기 ></button></a>
+        </div>
+    </div>
 </body>
+</html>
