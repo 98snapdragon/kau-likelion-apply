@@ -117,6 +117,7 @@ textarea {
     height: 275px;
     padding: 10px;
     border: 1px solid #ebebeb;
+    resize: none;
 }
 
 .position-container {
