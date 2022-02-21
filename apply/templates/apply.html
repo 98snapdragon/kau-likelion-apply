@@ -1,0 +1,132 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/apply.css' %}">
+    <title>지원하기</title>
+</head>
+<body>
+    <form action="{% url 'create' %}" method="post">
+        {% csrf_token %}
+        <div class="base-container">
+            <div class="title-container">
+                <h1>지원하기</h1>
+    
+                <div class="dot-container">
+                    <div class="dot"></div>
+                </div>
+            </div>
+            
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>안녕하세요! 지원자님에 대해 알려주세요.</h2>
+    
+                    <div class="info-box">
+                        <p class="info-label">이름</p>
+                        <input class="info-input" name="name" type="text">
+                    </div>
+    
+                    <div class="info-box">
+                        <p class="info-label">학번</p>
+                        <input class="info-input" name="studentId" type="text">
+                    </div>
+    
+                    <div class="info-box">
+                        <p class="info-label">학년</p>
+                        <input class="info-input" name="grade" type="text">
+                    </div>
+    
+                    <div class="info-box">
+                        <p class="info-label">전공</p>
+                        <input class="info-input" name="major" type="text">
+                    </div>
+    
+                    <div class="info-box">
+                        <p class="info-label">이메일</p>
+                        <input class="info-input" name="email" type="text">
+                    </div>
+    
+                    <div class="info-box">
+                        <p class="info-label">전화번호</p>
+                        <input class="info-input" name="phone" type="text">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>항공대 멋쟁이사자처럼 10기에 지원하게 된 이유를 알려주세요.</h2>
+    
+                    <textarea name="motive" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>원하시는 주 포지션을 선택해 주세요.</h2>
+    
+                    <div class="position-container">
+                        <div class="position-box">
+                            <input class="position-radio" type="radio" name="position" value="기획/디자인" id="">
+                            <p class="position">기획/디자인</p>
+                        </div>
+        
+                        <div class="position-box">
+                            <input class="position-radio" type="radio" name="position" value="프론트엔드" id="">
+                            <p class="position">프론트엔드</p>
+                        </div>
+        
+                        <div class="position-box">
+                            <input class="position-radio" type="radio" name="position" value="백엔드" id="">
+                            <p class="position">백엔드</p>
+                        </div>
+        
+                        <div class="position-box">
+                            <input class="position-radio" type="radio" name="position" value="잘 모르겠음" id="">
+                            <p class="position">잘 모르겠음</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>포지션을 선택한 이유와 관련 경험을 해본 적이 있는지, 그리고 멋사를 통해 어떻게 성장하고 싶은지 말씀해주세요.</h2>
+    
+                    <textarea name="positionRe" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>협업, 팀워크에 대한 경험과 그 경험을 멋사에서 어떻게 활용할 수 있을지 말씀해주세요. 경험이 없다면, 협업에 대한 자신의 생각을 적어주셔도 괜찮습니다.</h2>
+    
+                    <textarea name="teamwork" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>항공대 멋사는 최소 주 1회의 정기 세션과 추가적인 팀 회의가 필요합니다. 멋사에 얼마나 열정적으로, 매주 얼만큼의 시간을 투자하실 수 있을지 알려주세요.</h2>
+    
+                    <textarea name="passion" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <div class="wrap-container">
+                <div class="wrap-content">
+                    <h2>코딩미션 코드를 입력해 주세요.</h2>
+    
+                    <textarea name="code" id="" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <button type="submit">지원하기</button>
+        </div>
+    </form>
+</body>
+</html>
