@@ -26,13 +26,11 @@
 }
 
 .beanpole-medium {
-    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
-    font-weight: 400;
+    font-family: 'beanpoleotM00';
 }
 
 .beanpole-light {
-    font-family: "빈폴 2020OTF", 'beanpoleL00', beanpoleL00;
-    font-weight: 100;
+    font-family: 'beanpoleotL00';
 }
 
 .all-container {

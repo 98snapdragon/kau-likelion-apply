@@ -21,7 +21,7 @@
     text-shadow: 0px 0px 5px #00000029;
     color: #00000080;
     margin-top: -30px;
-    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
+    font-family: 'beanpoleotM00';
     font-weight: 100;
     font-size: 55px;
 }
@@ -36,7 +36,7 @@
 .sns-text {
     text-shadow: 0px 0px 5px #00000029;
     color: #00000080;
-    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
+    font-family: 'beanpoleotM00';
     font-weight: 100;
     font-size: 25px;
 }
