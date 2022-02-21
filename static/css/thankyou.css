@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'beanpoleotM00';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/beanpoleotM00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.all-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-logo {
+    margin-top: 20px;
+    width: 450px;
+    height: 450px;
+}
+
+.thank-you {
+    text-shadow: 0px 0px 5px #00000029;
+    color: #00000080;
+    margin-top: -30px;
+    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
+    font-weight: 100;
+    font-size: 55px;
+}
+
+.link-container {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sns-text {
+    text-shadow: 0px 0px 5px #00000029;
+    color: #00000080;
+    font-family: "빈폴 2020OTF", 'beanpoleM00', beanpoleM00;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.sns-container {
+    margin-top: -10px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}
+
+.sns-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.a:hover {
+    cursor: pointer;
+}
